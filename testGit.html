@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dodatniaUjemna</title>
+    <script type="text/javascript">
+      function check()
+      {
+        var number=document.getElementById("field").value;
+        if(number>0)document.getElementById("score").innerHTML="dodatnia";
+        else if(number<0)document.getElementById("score").innerHTML="ujemna";
+        else document.getElementById("score").innerHTML="zero";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="field"/>
+    <input type="submit" value="Submit" onclick="check()"/>
+    <div id="score"></div>
+  </body>
+</html>
